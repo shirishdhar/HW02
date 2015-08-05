@@ -13,7 +13,11 @@
 #                                                                  allen
 ################################################################################
 # Write your function below:
-# Body
+def right_justify(x):
+    l=len(x)
+    space=' '
+    print (space*(70-l) + x)
+#Body
 
 
 
