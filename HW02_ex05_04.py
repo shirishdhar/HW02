@@ -21,6 +21,28 @@
 
 ################################################################################
 # Write your functions below:
+def is_triangle(a, b, c):
+    count=0
+    if ((a+b)>=c):
+        count+= 1
+    if ((b+c)>=a):
+        count+= 1
+    if ((a+c)>=b):
+        count+=1
+    if (count==3):
+        print('Yes')
+    else:
+        print('No')
+
+def check_stick_lengths():
+    raw_a=raw_input('Enter length of first side:'/n)
+    raw_b=raw_input('Enter length of second side:/n'/n)
+    raw_c=raw_input('Enter length of third side:/n')
+    a=int(raw_a)
+    b=int(raw_b)
+    c=int(raw_c)
+    is_triangle(a, b, c)
+    
 # Body
 
 
@@ -44,9 +66,12 @@ def main():
     and a function call for
     check_stick_lengths()
     """
-    print("Hello World!")
-
-
+    #print("Hello World!")
+#   is_triangle(1,2,3)
+#    is_triangle(1,2,4)
+#    is_triangle(1,5,3)
+#    is_triangle(6,2,3)
+    check_stick_lengths()
 
 if __name__ == "__main__":
     main()

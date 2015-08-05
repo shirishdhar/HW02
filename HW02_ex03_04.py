@@ -27,6 +27,16 @@
 # should be only two statements in the body of this function, not four.
 ################################################################################
 # Write your functions below:
+def do_twice(f,e):
+    f(e)
+    f(e)
+def print_twice(string):
+    print(string)
+    print(string)
+def do_four(f1,e1):
+    do_twice(f1,e1)
+    do_twice(f1,e1)
+
 # Body
 
 
@@ -43,6 +53,8 @@ def main():
     do_four([function object], [some_value])
     """
     print("Hello World!")
+    do_twice(print_twice,'spam')
+    do_four(print_twice,'spamagain')
     
 
 

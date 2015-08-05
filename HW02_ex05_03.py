@@ -19,6 +19,27 @@
 
 ################################################################################
 # Write your functions below:
+def check_fermat(a, b, c, n):
+    x1= a**n
+    x2= b**n
+    x3= c**n
+    if(x1+x2==x3):
+        if(n>2):
+            print("Holy smokes, Fermat was wrong!")
+        print("True for n<2")
+    else:
+        print("No, that doesn't work.")
+def check_fermat_ints():
+    raw_a=raw_input('Enter the first number a:\n')
+    raw_b=raw_input('Enter the second number b:\n')
+    raw_c=raw_input('Enter the third number c:\n')
+    raw_n=raw_input('Enter the exponent n:\n')
+    a=int(raw_a)
+    b=int(raw_b)
+    c=int(raw_c)
+    n=int(raw_n)
+    check_fermat(a, b, c, n)
+    
 # Body
 
 
@@ -39,7 +60,8 @@ def main():
     check_fermat_ints()
     check_fermat()
     """
-    print("Hello World!")
+    #check_fermat(2, 2, 4, 1)
+    check_fermat_ints()
 
 
 

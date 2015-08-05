@@ -6,6 +6,9 @@
 
 ################################################################################
 # Write your functions below:
+def do_n(f,x):
+    for i in range(0,x):
+        f()
 # Body
 
 
@@ -25,7 +28,7 @@ def main():
     When complete have one function call in this function:
     do_n(print_hello, 10)
     """
-    print_hello() # replace this with do_n(print_hello, 10)
+    do_n(print_hello, 10)
 
 
 
